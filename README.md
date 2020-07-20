@@ -11,7 +11,7 @@ CICC调色板可以用于在使用Python生成图表或报告时，能够匹配C
 
 1. 直接使用模板颜色,颜色使用 *ppt_x_y* 来标记, *x*, *y* 是CICC PPT模板中色版的位置。
 
-```
+```python
 from cicc_colors import colors
 colors.ppt_1_1
 >>> Color(203,170,123,255)
@@ -25,9 +25,9 @@ colors.ppt_1_1.normal_rgb()
 
 2. 自定义颜色，使用 r,g,b 来定义颜色后使用
 
-```
+```python
 from cicc_colors import colors
-user_color= colors.Color(115,30,0)
+user_color = colors.Color(115,30,0)
 >>> Color(115,30,0)
 user_color.hex()
 >>> '#731E00'
@@ -38,14 +38,16 @@ user_color.normal_rgb()
 ```
 
 3. rgb 转 hex
-```
+
+```python
 from cicc_colors import colors
 colors.RGB2Hex(203,170,123)
 >>> '#CBAA7B'
 ```
 
 4. hex 转 rgb
-```
+
+```python
 from cicc_colors import colors
 colors.Hex2RGB('#FF0FF0')
 >>> (255, 15, 240)
