@@ -1,6 +1,6 @@
 import setuptools
 
-with open("README.md", "r") as fh:
+with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
@@ -15,7 +15,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python",
-        "Intended Audience :: Finance",
+        "Intended Audience :: Financial and Insurance Industry",
         "Topic :: Multimedia :: Graphics",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
