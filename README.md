@@ -16,7 +16,7 @@ from cicc_colors import colors
 colors.ppt_1_1
 >>> Color(203,170,123,255)
 colors.ppt_1_1.hex()
->>> '#CBAA7B'
+>>> 'CBAA7B'
 colors.ppt_1_1.rgb()
 >>> (203,170,123)
 colors.ppt_1_1.normal_rgb()
@@ -30,6 +30,8 @@ from cicc_colors import colors
 user_color = colors.Color(115,30,0)
 >>> Color(115,30,0)
 user_color.hex()
+>>> '731E00'
+user_color.hex(with_hex = True)
 >>> '#731E00'
 user_color.rgb()
 >>> (115, 30, 0)

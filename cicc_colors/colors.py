@@ -42,18 +42,24 @@ class Color:
         "Returns a four-tuple of components, range 0-1"
         return tuple([x/255 for x in self.rgba()])
 
-    def hex(self):
-        return ('#%02x%02x%02x' % self.rgb()).upper()
+    def hex(self, with_hash = False):
+        if with_hash:
+            return ('#%02x%02x%02x' % self.rgb()).upper()
+        else:
+            return ('%02x%02x%02x' % self.rgb()).upper()
 
-    def hexa(self):
-        return ('#%02x%02x%02x%02x' % self.rgba()).upper()
+    def hexa(self, with_hash = False):
+        if with_hash:
+            return ('#%02x%02x%02x%02x' % self.rgba()).upper()
+        else:
+            return ('%02x%02x%02x%02x' % self.rgba()).upper()
 
     @property
     def normalizedAlpha(self):
         return self.alpha/255
 
-def RGB2Hex(red, green, blue):
-    return Color(red,green,blue).hex()
+def RGB2Hex(red, green, blue, with_hash = False):
+    return Color(red,green,blue).hex(with_hash)
 
 def Hex2RGB(hexstr):
     red = int(hexstr[1:3], 16)

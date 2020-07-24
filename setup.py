@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="cicc_colors",
-    version="0.2.0",
+    version="0.3.0",
     author="Pengcheng Song",
     author_email="smth_spc@hotmail.com",
     description="Library of color palettes for CICC WM slides, reports and tables.",
